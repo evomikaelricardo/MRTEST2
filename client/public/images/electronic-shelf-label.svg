@@ -1,0 +1,30 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <!-- Shelf -->
+  <rect x="8" y="40" width="48" height="4" fill="#666"/>
+  <rect x="8" y="48" width="48" height="4" fill="#666"/>
+  
+  <!-- Electronic Labels -->
+  <rect x="12" y="28" width="16" height="12" rx="2" fill="#001765"/>
+  <rect x="14" y="30" width="12" height="2" fill="white"/>
+  <rect x="14" y="33" width="8" height="1.5" fill="#00BCD4"/>
+  <rect x="14" y="36" width="6" height="1.5" fill="white"/>
+  
+  <rect x="32" y="28" width="16" height="12" rx="2" fill="#001765"/>
+  <rect x="34" y="30" width="12" height="2" fill="white"/>
+  <rect x="34" y="33" width="8" height="1.5" fill="#00BCD4"/>
+  <rect x="34" y="36" width="6" height="1.5" fill="white"/>
+  
+  <!-- Wireless signals -->
+  <g transform="translate(20, 18)">
+    <path d="M 0 6 A 6 6 0 0 1 12 6" stroke="#00BCD4" stroke-width="1.5" fill="none"/>
+    <path d="M 2 6 A 4 4 0 0 1 10 6" stroke="#00BCD4" stroke-width="1.5" fill="none"/>
+    <circle cx="6" cy="6" r="1" fill="#00BCD4"/>
+  </g>
+  
+  <g transform="translate(40, 18)">
+    <path d="M 0 6 A 6 6 0 0 1 12 6" stroke="#00BCD4" stroke-width="1.5" fill="none"/>
+    <path d="M 2 6 A 4 4 0 0 1 10 6" stroke="#00BCD4" stroke-width="1.5" fill="none"/>
+    <circle cx="6" cy="6" r="1" fill="#00BCD4"/>
+  </g>
+</svg>

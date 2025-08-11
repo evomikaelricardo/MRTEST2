@@ -1,0 +1,37 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <!-- Thermostat unit -->
+  <circle cx="32" cy="32" r="16" fill="#001765"/>
+  <circle cx="32" cy="32" r="12" fill="white"/>
+  <circle cx="32" cy="32" r="8" fill="#001765"/>
+  
+  <!-- Temperature display -->
+  <text x="32" y="28" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">22°</text>
+  <text x="32" y="36" text-anchor="middle" font-family="Arial" font-size="6" fill="white">COOL</text>
+  
+  <!-- Temperature range marks -->
+  <circle cx="32" cy="16" r="1" fill="#00BCD4"/>
+  <circle cx="32" cy="48" r="1" fill="#00BCD4"/>
+  <circle cx="16" cy="32" r="1" fill="#00BCD4"/>
+  <circle cx="48" cy="32" r="1" fill="#00BCD4"/>
+  
+  <!-- Air flow indicators -->
+  <g opacity="0.7">
+    <!-- Cool air -->
+    <path d="M 8 12 Q 12 8 16 12" stroke="#00BCD4" stroke-width="2" fill="none"/>
+    <path d="M 8 16 Q 12 12 16 16" stroke="#00BCD4" stroke-width="2" fill="none"/>
+    <path d="M 8 20 Q 12 16 16 20" stroke="#00BCD4" stroke-width="2" fill="none"/>
+    
+    <!-- Warm air -->
+    <path d="M 48 52 Q 52 48 56 52" stroke="#FF6B6B" stroke-width="2" fill="none"/>
+    <path d="M 48 48 Q 52 44 56 48" stroke="#FF6B6B" stroke-width="2" fill="none"/>
+    <path d="M 48 44 Q 52 40 56 44" stroke="#FF6B6B" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Control buttons -->
+  <circle cx="26" cy="26" r="2" fill="white" stroke="#001765" stroke-width="1"/>
+  <text x="26" y="28" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">+</text>
+  
+  <circle cx="38" cy="38" r="2" fill="white" stroke="#001765" stroke-width="1"/>
+  <text x="38" y="40" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">-</text>
+</svg>

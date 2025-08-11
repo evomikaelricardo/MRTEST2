@@ -161,7 +161,7 @@ nav a:hover {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 3rem;
     margin-top: 4rem;
 }
@@ -173,6 +173,7 @@ nav a:hover {
     box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #F0F0F0;
+    min-height: auto;
 }
 
 .service-card:hover {
@@ -207,22 +208,47 @@ nav a:hover {
 }
 
 .service-features {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
 
-.service-features li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
-    position: relative;
-    color: #333333;
+.feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: #F8F9FA;
+    border-radius: 8px;
+    border-left: 4px solid #00BCD4;
+    transition: all 0.3s ease;
 }
 
-.service-features li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #00BCD4;
-    font-weight: bold;
+.feature-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 23, 101, 0.1);
+}
+
+.feature-image {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.feature-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* About Section */
@@ -463,6 +489,18 @@ footer {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .feature-image {
+        width: 40px;
+        height: 40px;
+        align-self: center;
     }
 
     .about-content,
