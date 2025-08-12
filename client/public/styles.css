@@ -83,21 +83,6 @@ nav a:hover {
     position: relative;
 }
 
-.dropdown > a {
-    cursor: pointer;
-}
-
-.dropdown > a::after {
-    content: " ▼";
-    font-size: 0.8em;
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.dropdown.dropdown-active > a::after {
-    transform: rotate(180deg);
-}
-
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -117,8 +102,7 @@ nav a:hover {
 
 /* Removed horizontal menu styles - using vertical layout */
 
-.dropdown:hover .dropdown-menu,
-.dropdown.dropdown-active .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);

@@ -71,33 +71,6 @@
         });
     });
     
-    // Dropdown menu toggle for Solutions
-    const dropdownTrigger = document.querySelector('[data-testid="nav-solutions"]');
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    
-    if (dropdownTrigger && dropdown && dropdownMenu) {
-        // Prevent default link behavior and toggle dropdown on click
-        dropdownTrigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            dropdown.classList.toggle('dropdown-active');
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('dropdown-active');
-            }
-        });
-        
-        // Close dropdown when clicking on menu items
-        dropdownMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                dropdown.classList.remove('dropdown-active');
-            });
-        });
-    }
-
     // Mobile menu toggle
     const mobileMenu = document.querySelector('.mobile-menu');
     const nav = document.querySelector('nav ul');
