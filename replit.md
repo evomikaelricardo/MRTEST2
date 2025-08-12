@@ -91,3 +91,5 @@ Preferred communication style: Simple, everyday language.
 - PostCSS for CSS processing
 - Custom CSS variables for theming
 - Responsive design utilities
+- Consistent hero sections across all pages with relevant imagery
+- Enhanced visual design following home page template

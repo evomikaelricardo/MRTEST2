@@ -53,10 +53,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero warehouse-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Smart Warehouse Solutions</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Revolutionize warehouse operations with automated systems that increase efficiency, reduce costs, and enhance operational visibility across your supply chain.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Smart Warehouse Solutions</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Revolutionize warehouse operations with automated systems that increase efficiency, reduce costs, and enhance operational visibility across your supply chain.</p>
+                    <p class="stats" data-testid="hero-stats">Increase efficiency by 40% and reduce costs by 25%</p>
+                    <a href="#technologies" class="cta-button" data-testid="button-cta-hero">Explore Warehouse Tech</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/automated-warehousing.svg" alt="Smart Warehouse automation system with RFID inventory tracking and automated operations" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

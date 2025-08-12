@@ -53,10 +53,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero home-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Smart Home Solutions</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Create intelligent living spaces with advanced home automation systems that prioritize comfort, security, energy efficiency, and seamless connectivity.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Smart Home Solutions</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Create intelligent living spaces with advanced home automation systems that prioritize comfort, security, energy efficiency, and seamless connectivity.</p>
+                    <p class="stats" data-testid="hero-stats">Save 30% on energy costs with intelligent automation</p>
+                    <a href="#technologies" class="cta-button" data-testid="button-cta-hero">Discover Smart Living</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/home-automation.svg" alt="Smart Home automation system with intelligent climate control and security features" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

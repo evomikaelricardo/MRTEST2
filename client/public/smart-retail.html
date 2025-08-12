@@ -53,10 +53,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Smart Retail Solutions</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Transform your retail operations with intelligent IoT solutions that enhance customer experience, optimize store performance, and drive business growth.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Smart Retail Solutions</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Transform your retail operations with intelligent IoT solutions that enhance customer experience, optimize store performance, and drive business growth.</p>
+                    <p class="stats" data-testid="hero-stats">Proven results across 30+ retail locations in Southeast Asia</p>
+                    <a href="#features" class="cta-button" data-testid="button-cta-hero">Explore Our Solutions</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/footfall-counter.svg" alt="Smart Retail Analytics Dashboard showcasing customer traffic patterns and store optimization tools" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

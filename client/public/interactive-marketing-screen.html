@@ -54,10 +54,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Interactive Marketing Screens</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Transform customer engagement with AI-powered interactive displays that deliver personalized content, immersive product experiences, and dynamic promotional campaigns.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Interactive Marketing Screens</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Transform customer engagement with AI-powered interactive displays that deliver personalized content, immersive product experiences, and dynamic promotional campaigns.</p>
+                    <p class="stats" data-testid="hero-stats">Boost customer engagement by 60% with personalized displays</p>
+                    <a href="#features" class="cta-button" data-testid="button-cta-hero">Experience Interactive Tech</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/interactive-screen.svg" alt="Interactive Marketing Screen displaying personalized content and customer engagement features" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

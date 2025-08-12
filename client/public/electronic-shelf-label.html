@@ -54,10 +54,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Electronic Shelf Labels</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Revolutionary digital price tags that eliminate manual pricing errors, reduce labor costs, and enable dynamic pricing strategies with real-time wireless updates.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Electronic Shelf Labels</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Revolutionary digital price tags that eliminate manual pricing errors, reduce labor costs, and enable dynamic pricing strategies with real-time wireless updates.</p>
+                    <p class="stats" data-testid="hero-stats">Reduce pricing errors by 99% and save 15+ hours per week</p>
+                    <a href="#features" class="cta-button" data-testid="button-cta-hero">Discover ESL Benefits</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/electronic-shelf-label.svg" alt="Electronic Shelf Label system displaying real-time pricing and product information" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

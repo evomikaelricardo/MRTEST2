@@ -53,10 +53,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero about-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">About EVO</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Leading System Integrator providing reliable and scalable enterprise IoT and AI solutions across Southeast Asia, transforming businesses through cutting-edge technology.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">About EVO</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Leading System Integrator providing reliable and scalable enterprise IoT and AI solutions across Southeast Asia, transforming businesses through cutting-edge technology.</p>
+                    <p class="stats" data-testid="hero-stats">Trusted partner for enterprise IoT solutions across 30+ cities</p>
+                    <a href="#mission" class="cta-button" data-testid="button-cta-hero">Learn More About Us</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/hero-enterprise-iot.jpg" alt="EVO team showcasing enterprise IoT solutions and system integration expertise" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 

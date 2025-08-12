@@ -53,10 +53,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero" data-testid="hero-section">
+    <section class="hero hero-with-bg" data-testid="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1 data-testid="hero-title">Retail Traffic Analytic</h1>
-            <p class="subtitle" data-testid="hero-subtitle">Transform your retail business with AI-powered traffic analytics that provide deep insights into customer behavior, optimize operations, and drive measurable growth through data-driven decision making.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-testid="hero-title">Retail Traffic Analytic</h1>
+                    <p class="subtitle" data-testid="hero-subtitle">Transform your retail business with AI-powered traffic analytics that provide deep insights into customer behavior, optimize operations, and drive measurable growth through data-driven decision making.</p>
+                    <p class="stats" data-testid="hero-stats">Increase conversion rates by 35% with actionable insights</p>
+                    <a href="#benefits" class="cta-button" data-testid="button-cta-hero">See Analytics in Action</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/footfall-counter.svg" alt="Retail Traffic Analytics system showing customer movement patterns and engagement metrics" class="hero-main-image" data-testid="hero-image">
+                </div>
+            </div>
         </div>
     </section>
 
