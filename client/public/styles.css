@@ -90,6 +90,18 @@ nav a:hover {
     z-index: 1000;
 }
 
+.dropdown-menu.horizontal-menu {
+    display: flex;
+    min-width: 600px;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.dropdown:hover .dropdown-menu.horizontal-menu {
+    transform: translateX(-50%) translateY(0);
+}
+
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
