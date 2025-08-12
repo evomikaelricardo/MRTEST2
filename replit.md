@@ -2,7 +2,7 @@
 
 ## Overview
 
-EVO is a comprehensive enterprise IoT and AI solutions platform designed to serve smart retail, smart home, and smart warehouse sectors across Southeast Asia. The application combines a modern React frontend with an Express.js backend, featuring a contact form system for lead generation and customer inquiries. The platform showcases the company's capabilities in providing reliable and scalable enterprise technology solutions.
+EVO is a comprehensive enterprise IoT and AI solutions platform designed to serve smart retail, smart home, smart warehouse, and custom solution sectors across Southeast Asia. The website is built using HTML, CSS, and JavaScript (as requested by user) with an Express.js backend for contact form functionality. The platform showcases the company's capabilities in providing integrated, personalized, and affordable enterprise technology solutions across 30+ cities in Southeast Asia.
 
 ## User Preferences
 
