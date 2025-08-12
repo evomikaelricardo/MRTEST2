@@ -151,32 +151,72 @@ nav a:hover {
 .hero {
     margin-top: 80px;
     padding: 100px 0;
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
-    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-with-bg {
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 23, 101, 0.1);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    text-align: left;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #001765;
+    color: white;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .hero .subtitle {
     font-size: 1.25rem;
-    color: #666666;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.6;
 }
 
 .hero .stats {
     font-size: 1.1rem;
-    color: #001765;
+    color: #00BCD4;
     font-weight: 600;
     margin-bottom: 3rem;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.3);
 }
 
 .cta-button {
@@ -197,6 +237,84 @@ nav a:hover {
     background: #002080;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 23, 101, 0.3);
+}
+
+/* IoT Ecosystem Section */
+.iot-ecosystem-section {
+    padding: 100px 0;
+    background: #FAFBFC;
+}
+
+.ecosystem-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.ecosystem-image {
+    text-align: center;
+}
+
+.ecosystem-main-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+}
+
+.ecosystem-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.ecosystem-text p {
+    font-size: 1.2rem;
+    color: #4A5568;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.ecosystem-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ecosystem-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ecosystem-feature .feature-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.ecosystem-feature .feature-text h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 0.5rem;
+}
+
+.ecosystem-feature .feature-text p {
+    font-size: 1rem;
+    color: #4A5568;
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* Services Section */
@@ -1250,6 +1368,43 @@ footer {
 @media (max-width: 768px) {
     .page-hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .hero-content,
+    .ecosystem-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .ecosystem-text h2 {
+        font-size: 2rem;
+    }
+    
+    .ecosystem-text p {
+        font-size: 1rem;
+    }
+    
+    .hero-main-image,
+    .ecosystem-main-image {
+        max-width: 400px;
     }
 
     .benefits-grid,
