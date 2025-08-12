@@ -55,14 +55,19 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+nav > ul > li > a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 1rem 1.5rem;
+    border-radius: 0;
 }
 
 /* Global link styling - remove underlines from all clickable elements */
@@ -74,7 +79,9 @@ a:hover {
     text-decoration: none;
 }
 
-nav a:hover {
+nav > ul > li > a:hover,
+nav > ul > li:hover > a {
+    background: rgba(0, 188, 212, 0.1);
     color: #00BCD4;
 }
 
@@ -88,16 +95,16 @@ nav a:hover {
     top: 100%;
     left: 0;
     background: #001765;
-    min-width: 200px;
-    box-shadow: 0 5px 20px rgba(0, 23, 101, 0.4);
-    border-radius: 8px;
-    padding: 0.5rem 0;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 23, 101, 0.3);
+    border-radius: 0;
+    padding: 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
+    transform: translateY(-15px);
+    transition: all 0.4s ease;
     z-index: 1000;
-    border: 1px solid rgba(0, 188, 212, 0.2);
+    border-top: 3px solid #00BCD4;
 }
 
 /* Multi-level dropdown styles */
@@ -107,20 +114,19 @@ nav a:hover {
 
 .dropdown-submenu-menu {
     position: absolute;
-    top: -5px;
+    top: 0;
     left: 100%;
     background: #001765;
-    min-width: 220px;
-    box-shadow: 0 5px 20px rgba(0, 23, 101, 0.4);
-    border-radius: 8px;
-    padding: 0.5rem 0;
+    min-width: 240px;
+    box-shadow: 0 8px 16px rgba(0, 23, 101, 0.3);
+    border-radius: 0;
+    padding: 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
+    transform: translateX(-15px);
+    transition: all 0.4s ease;
     z-index: 1001;
-    border: 1px solid rgba(0, 188, 212, 0.2);
-    margin-left: 5px;
+    border-left: 3px solid #00BCD4;
 }
 
 .dropdown-submenu:hover .dropdown-submenu-menu {
@@ -130,38 +136,43 @@ nav a:hover {
 }
 
 .dropdown-submenu > a::after {
-    content: "›";
+    content: "▶";
     float: right;
     margin-left: 10px;
-    font-size: 1.2em;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.6);
     transition: all 0.3s ease;
-    transform: rotate(0deg);
+    transform: translateX(0);
 }
 
 .dropdown-submenu:hover > a::after {
-    color: #00BCD4;
-    transform: rotate(90deg);
+    color: white;
+    transform: translateX(5px);
 }
 
 .dropdown-submenu-menu li {
     margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-submenu-menu li:last-child {
+    border-bottom: none;
 }
 
 .dropdown-submenu-menu a {
     display: block;
     padding: 0.75rem 1.5rem;
-    border-radius: 0;
+    color: white;
+    text-decoration: none;
     transition: all 0.3s ease;
     font-size: 0.9rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .dropdown-submenu-menu a:hover {
-    background: rgba(0, 188, 212, 0.15);
-    color: #00BCD4;
-    transform: translateX(5px);
+    background: #00BCD4;
+    color: white;
+    padding-left: 2rem;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -170,23 +181,36 @@ nav a:hover {
     transform: translateY(0);
 }
 
+.dropdown-submenu:hover .dropdown-submenu-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
 .dropdown-menu li {
     margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
 }
 
 .dropdown-menu a {
     display: block;
     padding: 0.875rem 1.5rem;
-    border-radius: 0;
+    color: white;
+    text-decoration: none;
     transition: all 0.3s ease;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 400;
+    position: relative;
 }
 
 .dropdown-menu a:hover {
-    background: rgba(0, 188, 212, 0.15);
-    color: #00BCD4;
-    transform: translateX(5px);
+    background: #00BCD4;
+    color: white;
+    padding-left: 2rem;
 }
 
 .mobile-menu {
