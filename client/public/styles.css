@@ -904,44 +904,89 @@ footer {
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    align-items: center;
 }
 
 .btn-primary {
-    background: #001765;
-    color: white;
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
+    background: white;
+    color: #001765;
+    padding: 1rem 2.5rem;
+    border-radius: 28px;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: 2px solid #001765;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: inline-block;
+    text-align: center;
+    min-width: 160px;
+    letter-spacing: 0.025em;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-primary:hover {
-    background: #00BCD4;
-    border-color: #00BCD4;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 23, 101, 0.3);
+    background: #F8F9FA;
+    color: #001765;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: #F8F9FA;
 }
 
 .btn-secondary {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.9);
     color: #001765;
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
+    padding: 1rem 2.5rem;
+    border-radius: 28px;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: 2px solid #001765;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: inline-block;
+    text-align: center;
+    min-width: 160px;
+    backdrop-filter: blur(12px);
+    letter-spacing: 0.025em;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-secondary:hover {
-    background: #001765;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 23, 101, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    color: #001765;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive button styles */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.875rem 2rem;
+        font-size: 0.95rem;
+        min-width: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 .hero-visual-modern {
