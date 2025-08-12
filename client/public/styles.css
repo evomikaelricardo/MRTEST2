@@ -1114,15 +1114,6 @@ footer {
     margin-top: 4rem;
 }
 
-.tech-card {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
 .tech-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
@@ -1145,6 +1136,31 @@ footer {
 .tech-card p {
     color: #666666;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.tech-card-button {
+    margin-top: auto;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+
+.tech-detail-button {
+    margin-top: 1.5rem;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+.tech-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
 }
 
 /* Tech Detail Grid */
