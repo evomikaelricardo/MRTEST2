@@ -1,0 +1,48 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <!-- Store layout -->
+  <rect x="8" y="8" width="48" height="48" fill="none" stroke="#001765" stroke-width="2"/>
+  
+  <!-- Entrance -->
+  <rect x="26" y="8" width="12" height="4" fill="#00BCD4"/>
+  <text x="32" y="6" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">ENTRANCE</text>
+  
+  <!-- Shelves/displays -->
+  <rect x="12" y="16" width="8" height="4" fill="#666"/>
+  <rect x="24" y="16" width="8" height="4" fill="#666"/>
+  <rect x="36" y="16" width="8" height="4" fill="#666"/>
+  <rect x="48" y="16" width="4" height="8" fill="#666"/>
+  
+  <rect x="12" y="28" width="8" height="4" fill="#666"/>
+  <rect x="36" y="28" width="8" height="4" fill="#666"/>
+  
+  <rect x="12" y="40" width="8" height="4" fill="#666"/>
+  <rect x="24" y="40" width="8" height="4" fill="#666"/>
+  <rect x="36" y="40" width="8" height="4" fill="#666"/>
+  
+  <!-- Customer movement heatmap -->
+  <g opacity="0.6">
+    <!-- Hot zones (red) -->
+    <circle cx="32" cy="20" r="3" fill="#FF6B6B" opacity="0.7"/>
+    <circle cx="28" cy="32" r="2" fill="#FF6B6B" opacity="0.5"/>
+    
+    <!-- Warm zones (orange) -->
+    <circle cx="16" cy="24" r="2" fill="#FFA726" opacity="0.6"/>
+    <circle cx="40" cy="24" r="2" fill="#FFA726" opacity="0.6"/>
+    
+    <!-- Cool zones (blue) -->
+    <circle cx="50" cy="32" r="1.5" fill="#42A5F5" opacity="0.5"/>
+  </g>
+  
+  <!-- Customer path -->
+  <path d="M 32 12 Q 28 20 32 24 Q 36 28 32 32 Q 28 36 32 40 Q 36 44 40 48" 
+        stroke="#00BCD4" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
+  
+  <!-- Checkout -->
+  <rect x="44" y="48" width="8" height="4" fill="#00BCD4"/>
+  <text x="48" y="58" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">CHECKOUT</text>
+  
+  <!-- Analytics indicators -->
+  <circle cx="54" cy="12" r="2" fill="#4CAF50"/>
+  <text x="54" y="16" text-anchor="middle" font-family="Arial" font-size="5" fill="#4CAF50">95%</text>
+</svg>

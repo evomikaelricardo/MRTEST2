@@ -69,6 +69,49 @@ nav a:hover {
     color: #00BCD4;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #001765;
+    min-width: 180px;
+    box-shadow: 0 5px 15px rgba(0, 23, 101, 0.3);
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(0, 188, 212, 0.1);
+    color: #00BCD4;
+}
+
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -516,6 +559,613 @@ footer {
 
     .container {
         padding: 0 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #002080;
+        margin-top: 0.5rem;
+        border-radius: 4px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Page-specific styles */
+.page-hero {
+    margin-top: 80px;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #001765;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.page-hero .subtitle {
+    font-size: 1.2rem;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #F0F0F0;
+    border-left: 4px solid #00BCD4;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
+}
+
+.benefit-image {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #666666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.benefit-features {
+    list-style: none;
+}
+
+.benefit-features li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333333;
+}
+
+.benefit-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+/* Technologies Section */
+.technologies-section {
+    padding: 100px 0;
+    background: #F8F9FA;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.tech-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
+}
+
+.tech-image {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+}
+
+.tech-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.tech-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Tech Detail Grid */
+.tech-detail-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.tech-detail-card {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-detail-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
+}
+
+.tech-detail-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.tech-detail-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.tech-detail-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.tech-detail-info p {
+    color: #666666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.tech-benefits h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.tech-benefits ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+}
+
+.tech-benefits li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333333;
+}
+
+.tech-benefits li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+/* ROI Section */
+.roi-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #001765 0%, #002080 100%);
+    color: white;
+    text-align: center;
+}
+
+.roi-section .section-title {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.roi-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.roi-stat {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.roi-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00BCD4;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.roi-label {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #00BCD4 0%, #40E0D0 100%);
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.cta-section .cta-button {
+    background: white;
+    color: #001765;
+}
+
+.cta-section .cta-button:hover {
+    background: #F0F0F0;
+    color: #001765;
+}
+
+/* Home Benefits */
+.home-benefits .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.benefit-item p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Savings Section */
+.savings-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+    color: white;
+    text-align: center;
+}
+
+.savings-section .section-title {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.savings-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.savings-stat {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.savings-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.savings-label {
+    color: white;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Custom Solutions Styles */
+.approach-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.approach-step {
+    text-align: center;
+    padding: 2rem;
+    background: #F8F9FA;
+    border-radius: 12px;
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #001765;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.approach-step h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.approach-step p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Industries Section */
+.industries-section {
+    padding: 100px 0;
+    background: #F8F9FA;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.industry-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
+}
+
+.industry-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.industry-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.industry-card p {
+    color: #666666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.industry-solutions {
+    list-style: none;
+}
+
+.industry-solutions li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333333;
+}
+
+.industry-solutions li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+/* Tech Categories */
+.custom-tech {
+    background: white;
+}
+
+.tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.tech-category {
+    background: #F8F9FA;
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 4px solid #00BCD4;
+}
+
+.tech-category h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1.5rem;
+}
+
+.tech-category ul {
+    list-style: none;
+}
+
+.tech-category li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333333;
+}
+
+.tech-category li:before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #00BCD4;
+    font-size: 0.8rem;
+}
+
+/* Process Section */
+.process-section {
+    padding: 100px 0;
+    background: #F8F9FA;
+}
+
+.process-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.process-benefit {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 23, 101, 0.1);
+    text-align: center;
+}
+
+.process-benefit h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 1rem;
+}
+
+.process-benefit p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .benefits-grid,
+    .tech-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-detail-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .tech-detail-image {
+        margin: 0 auto 1.5rem;
+    }
+
+    .roi-stats,
+    .savings-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .approach-grid,
+    .industries-grid,
+    .tech-categories,
+    .process-benefits {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <!-- Megaphone -->
+  <path d="M 8 26 L 20 22 L 32 22 L 32 42 L 20 42 L 8 38 Z" fill="#001765"/>
+  <rect x="32" y="24" width="8" height="16" fill="#00BCD4"/>
+  <circle cx="40" cy="32" r="4" fill="#00BCD4"/>
+  
+  <!-- Sound waves -->
+  <path d="M 44 28 A 8 8 0 0 1 44 36" stroke="#00BCD4" stroke-width="2" fill="none"/>
+  <path d="M 48 24 A 12 12 0 0 1 48 40" stroke="#00BCD4" stroke-width="2" fill="none"/>
+  <path d="M 52 20 A 16 16 0 0 1 52 44" stroke="#00BCD4" stroke-width="2" fill="none"/>
+  
+  <!-- Target audience -->
+  <g transform="translate(8, 48)">
+    <!-- Person 1 -->
+    <circle cx="8" cy="6" r="2" fill="#001765"/>
+    <rect x="6" y="8" width="4" height="6" rx="2" fill="#001765"/>
+    
+    <!-- Person 2 -->
+    <circle cx="16" cy="6" r="2" fill="#001765"/>
+    <rect x="14" y="8" width="4" height="6" rx="2" fill="#001765"/>
+    
+    <!-- Person 3 -->
+    <circle cx="24" cy="6" r="2" fill="#001765"/>
+    <rect x="22" y="8" width="4" height="6" rx="2" fill="#001765"/>
+    
+    <!-- Hearts/engagement -->
+    <path d="M 8 2 C 8 0, 12 0, 12 2 C 12 0, 16 0, 16 2 C 16 4, 12 6, 12 6 C 12 6, 8 4, 8 2" fill="#FF6B6B"/>
+  </g>
+  
+  <!-- Message content -->
+  <rect x="10" y="28" width="18" height="8" rx="2" fill="white" stroke="#001765" stroke-width="1"/>
+  <rect x="12" y="30" width="8" height="1" fill="#00BCD4"/>
+  <rect x="12" y="32" width="6" height="1" fill="#666"/>
+  <rect x="12" y="34" width="4" height="1" fill="#666"/>
+</svg>

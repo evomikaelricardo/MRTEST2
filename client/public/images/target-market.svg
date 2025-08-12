@@ -1,0 +1,38 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <!-- Target circles -->
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#001765" stroke-width="2"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#001765" stroke-width="2"/>
+  <circle cx="32" cy="32" r="8" fill="none" stroke="#00BCD4" stroke-width="2"/>
+  <circle cx="32" cy="32" r="3" fill="#00BCD4"/>
+  
+  <!-- Customer segments -->
+  <g opacity="0.8">
+    <!-- Segment 1 -->
+    <circle cx="18" cy="18" r="3" fill="#001765"/>
+    <text x="18" y="22" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">A</text>
+    
+    <!-- Segment 2 -->
+    <circle cx="46" cy="18" r="3" fill="#001765"/>
+    <text x="46" y="22" text-anchor="middle" font-family="Arial" font-size="6" fill="#001765">B</text>
+    
+    <!-- Segment 3 -->
+    <circle cx="18" cy="46" r="3" fill="#666"/>
+    <text x="18" y="50" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">C</text>
+    
+    <!-- Segment 4 -->
+    <circle cx="46" cy="46" r="3" fill="#666"/>
+    <text x="46" y="50" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">D</text>
+  </g>
+  
+  <!-- Arrows pointing to target -->
+  <path d="M 20 20 L 28 28" stroke="#00BCD4" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 44 20 L 36 28" stroke="#00BCD4" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00BCD4"/>
+    </marker>
+  </defs>
+</svg>
