@@ -100,7 +100,69 @@ nav a:hover {
     border: 1px solid rgba(0, 188, 212, 0.2);
 }
 
-/* Removed horizontal menu styles - using vertical layout */
+/* Multi-level dropdown styles */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu-menu {
+    position: absolute;
+    top: -5px;
+    left: 100%;
+    background: #001765;
+    min-width: 220px;
+    box-shadow: 0 5px 20px rgba(0, 23, 101, 0.4);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    border: 1px solid rgba(0, 188, 212, 0.2);
+    margin-left: 5px;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.dropdown-submenu > a::after {
+    content: "›";
+    float: right;
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+}
+
+.dropdown-submenu:hover > a::after {
+    color: #00BCD4;
+    transform: rotate(90deg);
+}
+
+.dropdown-submenu-menu li {
+    margin: 0;
+}
+
+.dropdown-submenu-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-submenu-menu a:hover {
+    background: rgba(0, 188, 212, 0.15);
+    color: #00BCD4;
+    transform: translateX(5px);
+}
 
 .dropdown:hover .dropdown-menu {
     opacity: 1;
