@@ -176,6 +176,18 @@ nav > ul > li:hover > a {
     overflow: hidden;
 }
 
+/* Smart Retail hero with heatmap background */
+.smart-retail-hero {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%), url('/images/retail-heatmap-analysis.png') center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
 /* Smart Retail page hero with icon background */
 .smart-retail-hero {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.9) 50%, rgba(255, 255, 255, 0.95) 100%),
