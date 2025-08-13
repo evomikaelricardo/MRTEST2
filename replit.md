@@ -6,6 +6,17 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 13, 2025 - Landing Page Design Standardization**
+- Applied modern hero section design from retail-traffic-analytic.html to all HTML files
+- Updated hero sections to use `hero-modern` class with consistent two-column layout
+- Implemented `hero-content-modern` structure with separate text and visual sections
+- Added `hero-visual-modern` containers with relevant product/service images
+- Integrated stats badges showing "30+ Cities Covered" across all pages
+- Applied page-specific hero images: retail heatmap analysis, warehouse automation, home automation, IoT ecosystem, enterprise IoT, product SVGs
+- Ensured consistent title structure with "Reliable & Scalable" main title and page-specific accent title
+- Standardized hero description messaging across all pages
+- Updated pages: index.html, smart-retail.html, smart-warehouse.html, smart-home.html, custom-solutions.html, about.html, electronic-shelf-label.html, interactive-marketing-screen.html, rfid-inventory.html
+
 **August 13, 2025 - Homepage Hero Design Update**
 - Replaced Southeast Asia map background with clean white background
 - Added new EVO digital logo as the main hero visual element
