@@ -1221,44 +1221,12 @@ footer {
     box-shadow: 0 20px 40px rgba(0, 23, 101, 0.2);
 }
 
-.hero-image-container:has(.hero-image-circle) {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-image-container:has(.hero-image-integrated) {
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-    overflow: visible;
-}
-
 .hero-image-modern {
     width: 100%;
     height: auto;
     max-width: 400px;
     border-radius: 16px;
     object-fit: cover;
-}
-
-.hero-image-circle {
-    border-radius: 50% !important;
-    width: 300px !important;
-    height: 300px !important;
-    object-fit: cover;
-    max-width: 300px !important;
-}
-
-.hero-image-integrated {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 400px !important;
-    object-fit: contain;
-    border-radius: 0 !important;
 }
 
 .stats-badge {

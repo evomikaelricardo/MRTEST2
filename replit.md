@@ -6,14 +6,6 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
-**August 13, 2025 - Integrated Hero Design with Stats Badge**
-- Replaced all hero section images with integrated design (targeted_element_1755059206896.png)
-- Applied integrated hero visual featuring circular blue border and built-in "30+ Cities Covered" stats badge
-- Added CSS styles for integrated design with transparent background and proper container handling
-- Removed separate stats badges as they're now part of the integrated image
-- Simplified hero visual structure with cleaner, more cohesive design
-- Updated all 10 HTML files: index.html, smart-retail.html, smart-warehouse.html, smart-home.html, custom-solutions.html, about.html, electronic-shelf-label.html, interactive-marketing-screen.html, rfid-inventory.html, retail-traffic-analytic.html
-
 **August 13, 2025 - Landing Page Design Standardization**
 - Applied modern hero section design from retail-traffic-analytic.html to all HTML files
 - Updated hero sections to use `hero-modern` class with consistent two-column layout
