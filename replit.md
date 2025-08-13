@@ -6,11 +6,6 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
-**August 13, 2025 - Smart Retail Image Update**
-- Replaced retail-heatmap-analysis.png with SmartRetail.png in smart-retail.html for better visual representation
-- Updated hero section image to showcase smart retail analytics dashboard with enhanced graphics and visualization elements
-- New image provides clearer representation of retail analytics and customer flow insights
-
 **August 13, 2025 - Smart Warehouse Section Redesign**
 - Redesigned "Advanced Warehouse Automation" section to focus on four core solutions
 - Updated structure to include: RFID Inventory Management, Automated CCTV Analysis, Warehouse-wide Automation Systems, and Robotic Integration
