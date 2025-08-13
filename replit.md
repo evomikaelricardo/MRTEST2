@@ -6,6 +6,14 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 13, 2025 - Hero Image Update with Circular Design**
+- Replaced all hero section images with user-provided EVO logo (targeted_element_1755059027841.png)
+- Applied circular styling to all hero images using `hero-image-circle` class
+- Added CSS styles for 300px circular images with proper border-radius and object-fit
+- Updated image containers to support circular shape with centered positioning
+- Applied consistent EVO branding across all pages with circular logo presentation
+- Updated all 10 HTML files: index.html, smart-retail.html, smart-warehouse.html, smart-home.html, custom-solutions.html, about.html, electronic-shelf-label.html, interactive-marketing-screen.html, rfid-inventory.html, retail-traffic-analytic.html
+
 **August 13, 2025 - Landing Page Design Standardization**
 - Applied modern hero section design from retail-traffic-analytic.html to all HTML files
 - Updated hero sections to use `hero-modern` class with consistent two-column layout
