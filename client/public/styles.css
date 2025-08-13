@@ -228,11 +228,15 @@ nav > ul > li:hover > a {
 /* Homepage hero text styling */
 .hero-with-bg .hero-text {
     text-align: left;
-    background: transparent;
-    padding: 3rem 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%);
+    backdrop-filter: blur(20px);
+    padding: 3rem;
     max-width: 700px;
     position: relative;
     z-index: 2;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 23, 101, 0.08), 0 8px 25px rgba(0, 23, 101, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 /* Smart Retail hero text styling */
@@ -980,57 +984,57 @@ footer {
 }
 
 .btn-primary {
-    background: #001765;
+    background: linear-gradient(135deg, #001765 0%, #002080 50%, #0026a0 100%);
     color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 28px;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #001765;
-    box-shadow: 0 6px 20px rgba(0, 23, 101, 0.2), 0 2px 6px rgba(0, 23, 101, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    box-shadow: 0 8px 30px rgba(0, 23, 101, 0.3), 0 4px 15px rgba(0, 23, 101, 0.1);
     display: inline-block;
     text-align: center;
-    min-width: 160px;
+    min-width: 180px;
     letter-spacing: 0.025em;
     position: relative;
     overflow: hidden;
 }
 
 .btn-primary:hover {
-    background: #002080;
+    background: linear-gradient(135deg, #002080 0%, #0026a0 50%, #0033c0 100%);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 23, 101, 0.3);
-    border-color: #002080;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 23, 101, 0.4), 0 6px 20px rgba(0, 23, 101, 0.15);
 }
 
 .btn-secondary {
-    background: transparent;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%);
     color: #001765;
-    padding: 1rem 2.5rem;
-    border-radius: 28px;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #001765;
-    box-shadow: 0 6px 20px rgba(0, 23, 101, 0.08), 0 2px 6px rgba(0, 23, 101, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(0, 23, 101, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 23, 101, 0.1), 0 4px 15px rgba(0, 23, 101, 0.05);
     display: inline-block;
     text-align: center;
-    min-width: 160px;
+    min-width: 180px;
     letter-spacing: 0.025em;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-    background: #001765;
+    background: linear-gradient(135deg, #001765 0%, #002080 50%, #0026a0 100%);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 23, 101, 0.2);
-    border-color: #001765;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 23, 101, 0.3), 0 6px 20px rgba(0, 23, 101, 0.1);
+    border-color: rgba(0, 23, 101, 0.4);
 }
 
 /* Responsive button styles */
