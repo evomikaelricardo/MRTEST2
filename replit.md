@@ -6,6 +6,13 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 13, 2025 - Navigation Menu Standardization**
+- Updated home page navigation menu to match about.html design for consistency
+- Changed logo from `logo-redesigned` class to standard `logo` class with `/logo-evo.png` image
+- Added clickable link wrapper around home page logo
+- Updated dropdown menu to use `horizontal-menu` class for consistent styling across all pages
+- Home page navigation now matches the design pattern used throughout the site
+
 **August 13, 2025 - Page-Specific Hero Updates**
 - Updated hero section descriptions and statistics to be content-specific rather than generic
 - Removed "30+ cities in Southeast Asia" emphasis to focus on page-specific value propositions and metrics
