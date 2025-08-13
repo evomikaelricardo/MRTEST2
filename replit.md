@@ -6,6 +6,14 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 13, 2025 - Homepage Hero Design Update**
+- Replaced Southeast Asia map background with clean white background
+- Added new EVO digital logo as the main hero visual element
+- Simplified hero section design with transparent text container
+- Removed all overlays and glass-morphism effects for cleaner appearance
+- Smart Retail page maintains custom icon background design
+- Enhanced visual hierarchy with focused logo presentation
+
 **August 13, 2025 - Design Theme Consistency Update**
 - Updated hero sections across all pages from dark blue to clean white background
 - Applied consistent button styling with proper color schemes for white background
