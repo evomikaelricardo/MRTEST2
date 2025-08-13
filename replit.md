@@ -6,6 +6,12 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 13, 2025 - Smart Retail Hero Description Update**
+- Updated hero section description in smart-retail.html to be more relevant to retail business
+- Changed from generic system integrator description to specific smart retail benefits
+- New description focuses on: optimizing customer experience, increasing conversion rates, streamlining inventory management, data-driven decisions, and boosting profitability
+- Maintained "30+ cities in Southeast Asia" statistic while making content retail-specific
+
 **August 13, 2025 - Landing Page Design Standardization**
 - Applied modern hero section design from retail-traffic-analytic.html to all HTML files
 - Updated hero sections to use `hero-modern` class with consistent two-column layout
