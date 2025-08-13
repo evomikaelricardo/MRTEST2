@@ -20,6 +20,9 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 - Updated text colors for better contrast and readability on white background
 - Standardized hero section structure with modern button layouts
 - Maintained clean, modern design aesthetic across all pages
+- Applied glass-morphism box design with elegant rounded buttons (50px border-radius)
+- Implemented gradient color transitions and backdrop blur effects
+- Removed hero images from all pages except homepage for consistent clean appearance
 - Updated pages: index.html, smart-retail.html, smart-warehouse.html, smart-home.html, custom-solutions.html, about.html, electronic-shelf-label.html, interactive-marketing-screen.html, rfid-inventory.html
 
 **August 13, 2025 - Migration Complete**
