@@ -202,8 +202,8 @@ nav > ul > li:hover > a {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -211,9 +211,18 @@ nav > ul > li:hover > a {
 
 .hero-logo-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     filter: drop-shadow(0 10px 30px rgba(0, 23, 101, 0.1));
+    position: relative;
+    z-index: 3;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 2rem;
 }
 
 /* Homepage hero text styling */
@@ -221,7 +230,9 @@ nav > ul > li:hover > a {
     text-align: left;
     background: transparent;
     padding: 3rem 0;
-    max-width: 600px;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Smart Retail hero text styling */
