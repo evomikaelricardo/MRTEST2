@@ -6,12 +6,13 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
-**August 13, 2025 - Smart Warehouse Content Update**
-- Replaced "Automated Warehousing" section with "Comprehensive Warehouse Solutions"
-- Updated content to reflect additional solutions provided for smart warehouse customers
-- New solutions include: security camera monitoring, lighting & HVAC automation, employee movement tracking, automated door locks & security gates, robot integration for inventory retrieval
-- Enhanced description to emphasize complete warehouse automation ecosystem approach
-- Content now better represents the full range of smart warehouse capabilities offered
+**August 13, 2025 - Smart Warehouse Section Redesign**
+- Redesigned "Advanced Warehouse Automation" section to focus on four core solutions
+- Updated structure to include: RFID Inventory Management, Automated CCTV Analysis, Warehouse-wide Automation Systems, and Robotic Integration
+- Added new "Warehouse-wide Automation Systems" card covering door locks, lighting, and HVAC automation
+- Created dedicated "Robotic Integration for Inventory Retrieval" section with autonomous navigation capabilities
+- Maintained existing RFID and CCTV content while enhancing overall solution presentation
+- Content now clearly presents the four primary smart warehouse solutions offered to customers
 
 **August 13, 2025 - Navigation Menu Standardization**
 - Updated home page navigation menu to match about.html design for consistency
