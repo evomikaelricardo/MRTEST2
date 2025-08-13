@@ -42,13 +42,13 @@ header {
 }
 
 .logo {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
 /* Redesigned logo with smooth transparent borders and color transitions */
 .logo-redesigned {
-    height: 60px;
+    height: 75px;
     width: auto;
     border-radius: 50%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 188, 212, 0.1) 50%, rgba(0, 23, 101, 0.1) 100%);
@@ -98,8 +98,8 @@ header {
 
 /* Alternative circular logo with gradient border */
 .logo-circular {
-    height: 50px;
-    width: 50px;
+    height: 63px;
+    width: 63px;
     border-radius: 50%;
     object-fit: cover;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
@@ -1111,8 +1111,8 @@ footer {
 }
 
 .benefit-image {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 1.5rem;
     border-radius: 8px;
 }
