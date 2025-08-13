@@ -1111,6 +1111,21 @@ footer {
     }
 }
 
+/* Mission & Vision Grid - 2 Columns */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .benefit-card {
     background: white;
     border-radius: 12px;
