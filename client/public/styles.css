@@ -46,6 +46,74 @@ header {
     width: auto;
 }
 
+/* Redesigned logo with smooth transparent borders and color transitions */
+.logo-redesigned {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 188, 212, 0.1) 50%, rgba(0, 23, 101, 0.1) 100%);
+    padding: 8px;
+    box-shadow: 
+        0 0 20px rgba(0, 188, 212, 0.3),
+        0 0 40px rgba(0, 188, 212, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-redesigned::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(0, 188, 212, 0.6) 0%, 
+        rgba(0, 23, 101, 0.8) 25%, 
+        rgba(0, 188, 212, 0.6) 50%, 
+        rgba(0, 23, 101, 0.8) 75%, 
+        rgba(0, 188, 212, 0.6) 100%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.logo-redesigned:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 30px rgba(0, 188, 212, 0.5),
+        0 0 60px rgba(0, 188, 212, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.logo-redesigned:hover::before {
+    opacity: 1;
+}
+
+/* Alternative circular logo with gradient border */
+.logo-circular {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border: 3px solid;
+    border-image: linear-gradient(45deg, rgba(0, 188, 212, 0.8), rgba(0, 23, 101, 0.8), rgba(0, 188, 212, 0.8)) 1;
+    filter: drop-shadow(0 4px 15px rgba(0, 188, 212, 0.3));
+    transition: all 0.3s ease;
+}
+
+.logo-circular:hover {
+    filter: drop-shadow(0 6px 20px rgba(0, 188, 212, 0.5));
+    transform: rotate(5deg) scale(1.1);
+}
+
 .company-name {
     font-size: 1.5rem;
     font-weight: 600;
