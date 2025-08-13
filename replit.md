@@ -11,8 +11,17 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 - Added new EVO digital logo as the main hero visual element
 - Simplified hero section design with transparent text container
 - Removed all overlays and glass-morphism effects for cleaner appearance
-- Smart Retail page maintains custom icon background design
 - Enhanced visual hierarchy with focused logo presentation
+
+**August 13, 2025 - Page-Specific Hero Background Integration**
+- Smart Retail: Added heatmap analysis background image positioned right-aligned
+- Smart Warehouse: Integrated automated warehousing SVG as subtle background
+- Smart Home: Added home automation SVG background for visual context
+- Custom Solutions: Applied IoT ecosystem SVG background design
+- About: Integrated enterprise IoT SVG background element
+- Product pages: Clean design without specific background images
+- All backgrounds use subtle opacity (0.1-0.15) to maintain text readability
+- Consistent glass-morphism box design across all hero sections
 
 **August 13, 2025 - Design Theme Consistency Update**
 - Updated hero sections across all pages from dark blue to clean white background

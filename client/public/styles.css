@@ -200,6 +200,114 @@ nav > ul > li:hover > a {
     z-index: 1;
 }
 
+/* Smart Warehouse hero with warehouse icon background */
+.smart-warehouse-hero {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
+.smart-warehouse-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url('/images/automated-warehousing.svg') right center / contain no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Smart Home hero with home automation icon background */
+.smart-home-hero {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
+.smart-home-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url('/images/home-automation.svg') right center / contain no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Custom Solutions hero with IoT ecosystem background */
+.custom-solutions-hero {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-solutions-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url('/images/iot-ecosystem.svg') right center / contain no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* About hero with enterprise IoT background */
+.about-hero {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url('/images/hero-enterprise-iot.svg') right center / contain no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Product pages hero styling */
+.product-hero {
+    background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
 /* Smart Retail hero with heatmap background */
 .smart-retail-hero {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%), url('/images/retail-heatmap-analysis.png') center center / cover no-repeat;
