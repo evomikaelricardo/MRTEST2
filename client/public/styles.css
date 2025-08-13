@@ -1296,12 +1296,11 @@ footer {
 
 .hero-image-modern {
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+    height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: -30% center;
+    border-radius: 50%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .stats-badge {
