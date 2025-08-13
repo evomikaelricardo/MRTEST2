@@ -164,7 +164,22 @@ nav > ul > li:hover > a {
     position: relative;
 }
 
+/* Homepage hero with Southeast Asia map */
 .hero-with-bg {
+    background: linear-gradient(135deg, rgba(0, 23, 101, 0.85) 0%, rgba(0, 23, 101, 0.75) 50%, rgba(0, 23, 101, 0.9) 100%),
+                url('/images/southeast-asia-bg.png') center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+/* Smart Retail page hero with icon background */
+.smart-retail-hero {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.9) 50%, rgba(255, 255, 255, 0.95) 100%),
                 url('/images/smart-retail-bg.png') right center / contain no-repeat;
     background-size: auto 80%, contain;
@@ -184,7 +199,7 @@ nav > ul > li:hover > a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 60%, rgba(255, 255, 255, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(0, 23, 101, 0.1) 0%, rgba(0, 188, 212, 0.05) 50%, rgba(0, 23, 101, 0.15) 100%);
 }
 
 .hero-content {
@@ -201,7 +216,20 @@ nav > ul > li:hover > a {
     min-height: 1px;
 }
 
-.hero-text {
+/* Homepage hero text styling */
+.hero-with-bg .hero-text {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 23, 101, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 600px;
+}
+
+/* Smart Retail hero text styling */
+.smart-retail-hero .hero-text {
     text-align: left;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -211,7 +239,8 @@ nav > ul > li:hover > a {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.hero h1 {
+/* Homepage hero text colors (dark background) */
+.hero-with-bg h1 {
     font-size: 3.5rem;
     font-weight: 700;
     color: #1A202C;
@@ -219,7 +248,23 @@ nav > ul > li:hover > a {
     line-height: 1.2;
 }
 
-.hero .subtitle {
+.hero-with-bg .subtitle {
+    font-size: 1.25rem;
+    color: #4A5568;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Smart Retail hero text colors (light background) */
+.smart-retail-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.smart-retail-hero .subtitle {
     font-size: 1.25rem;
     color: #4A5568;
     margin-bottom: 2rem;
