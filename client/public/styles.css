@@ -165,12 +165,17 @@ nav > ul > li:hover > a {
 }
 
 .hero-with-bg {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.9) 50%, rgba(255, 255, 255, 0.95) 100%),
+                url('/images/smart-retail-bg.png') right center / contain no-repeat;
+    background-size: auto 80%, contain;
+    background-position: 85% center, right center;
     min-height: 100vh;
     display: flex;
     align-items: center;
     margin-top: 0;
     border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -179,7 +184,7 @@ nav > ul > li:hover > a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(248, 250, 252, 0.05);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 60%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 .hero-content {
@@ -191,8 +196,19 @@ nav > ul > li:hover > a {
     z-index: 2;
 }
 
+.hero-image-spacer {
+    height: 1px;
+    min-height: 1px;
+}
+
 .hero-text {
     text-align: left;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 23, 101, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero h1 {
