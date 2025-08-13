@@ -1230,6 +1230,13 @@ footer {
     justify-content: center;
 }
 
+.hero-image-container:has(.hero-image-integrated) {
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    overflow: visible;
+}
+
 .hero-image-modern {
     width: 100%;
     height: auto;
@@ -1244,6 +1251,14 @@ footer {
     height: 300px !important;
     object-fit: cover;
     max-width: 300px !important;
+}
+
+.hero-image-integrated {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 400px !important;
+    object-fit: contain;
+    border-radius: 0 !important;
 }
 
 .stats-badge {
