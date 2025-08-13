@@ -6,12 +6,6 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
-**August 13, 2025 - About Page Hero Image Update**
-- Replaced hero image in about.html with Southeast Asia map showing regional coverage
-- Updated image source to use uploaded SouthEastAsiaMap_1755073239634.png asset
-- Enhanced visual representation of EVO's geographic presence across 30+ cities
-- Map image perfectly complements "Cities Covered" statistics and regional focus messaging
-
 **August 13, 2025 - Smart Warehouse Section Redesign**
 - Redesigned "Advanced Warehouse Automation" section to focus on four core solutions
 - Updated structure to include: RFID Inventory Management, Automated CCTV Analysis, Warehouse-wide Automation Systems, and Robotic Integration
