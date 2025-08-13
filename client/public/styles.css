@@ -160,16 +160,17 @@ nav > ul > li:hover > a {
 .hero {
     margin-top: 80px;
     padding: 100px 0;
-    color: white;
+    color: #2D3748;
     position: relative;
 }
 
 .hero-with-bg {
-    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
     margin-top: 0;
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .hero-overlay {
@@ -178,7 +179,7 @@ nav > ul > li:hover > a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 23, 101, 0.1);
+    background: rgba(248, 250, 252, 0.05);
 }
 
 .hero-content {
@@ -197,21 +198,21 @@ nav > ul > li:hover > a {
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: white;
+    color: #1A202C;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .hero .subtitle {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #4A5568;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
 .hero .stats {
     font-size: 1.1rem;
-    color: #00BCD4;
+    color: #001765;
     font-weight: 600;
     margin-bottom: 3rem;
 }
@@ -225,7 +226,8 @@ nav > ul > li:hover > a {
     max-width: 600px;
     height: auto;
     border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E2E8F0;
 }
 
 .cta-button {
@@ -910,16 +912,16 @@ footer {
 }
 
 .btn-primary {
-    background: white;
-    color: #001765;
+    background: #001765;
+    color: white;
     padding: 1rem 2.5rem;
     border-radius: 28px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid white;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: 2px solid #001765;
+    box-shadow: 0 6px 20px rgba(0, 23, 101, 0.2), 0 2px 6px rgba(0, 23, 101, 0.1);
     display: inline-block;
     text-align: center;
     min-width: 160px;
@@ -929,15 +931,15 @@ footer {
 }
 
 .btn-primary:hover {
-    background: #F8F9FA;
-    color: #001765;
+    background: #002080;
+    color: white;
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    border-color: #F8F9FA;
+    box-shadow: 0 8px 24px rgba(0, 23, 101, 0.3);
+    border-color: #002080;
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.9);
+    background: transparent;
     color: #001765;
     padding: 1rem 2.5rem;
     border-radius: 28px;
@@ -945,23 +947,22 @@ footer {
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: 2px solid #001765;
+    box-shadow: 0 6px 20px rgba(0, 23, 101, 0.08), 0 2px 6px rgba(0, 23, 101, 0.04);
     display: inline-block;
     text-align: center;
     min-width: 160px;
-    backdrop-filter: blur(12px);
     letter-spacing: 0.025em;
     position: relative;
     overflow: hidden;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.95);
-    color: #001765;
+    background: #001765;
+    color: white;
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 24px rgba(0, 23, 101, 0.2);
+    border-color: #001765;
 }
 
 /* Responsive button styles */
