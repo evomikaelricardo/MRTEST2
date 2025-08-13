@@ -6,16 +6,16 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
-**August 13, 2025 - Page-Specific Hero Description Updates**
-- Updated hero section descriptions across multiple pages to be content-specific rather than generic
-- Removed "30+ cities in Southeast Asia" emphasis to focus on page-specific value propositions
-- Smart Retail: Focuses on customer experience optimization, conversion rates, inventory management
-- Smart Home: Emphasizes home automation integration, voice control, mobile management, energy efficiency
-- Custom Solutions: Highlights tailored development approach, seamless integration, business requirements
-- Retail Traffic Analytics: Features AI-powered analytics, customer behavior patterns, store optimization
-- Electronic Shelf Labels: Showcases real-time pricing updates, error elimination, operational cost reduction
-- Interactive Marketing Screens: Promotes AI-powered displays, personalized content, customer engagement
-- All descriptions now summarize specific page content and benefits rather than generic company information
+**August 13, 2025 - Page-Specific Hero Updates**
+- Updated hero section descriptions and statistics to be content-specific rather than generic
+- Removed "30+ cities in Southeast Asia" emphasis to focus on page-specific value propositions and metrics
+- Smart Retail: Description focuses on customer experience optimization; Stats show "40% Sales Increase"
+- Smart Home: Emphasizes home automation integration; Stats show "35% Energy Savings"
+- Custom Solutions: Highlights tailored development approach; Stats show "100+ Custom Projects"
+- Retail Traffic Analytics: Features AI-powered analytics; Stats show "99% Accuracy Rate"
+- Electronic Shelf Labels: Showcases real-time pricing updates; Stats show "5+ Years Battery"
+- Interactive Marketing Screens: Promotes AI-powered displays; Stats show "3x More Engagement"
+- All descriptions and statistics now reflect specific page content and benefits rather than generic company information
 
 **August 13, 2025 - Landing Page Design Standardization**
 - Applied modern hero section design from retail-traffic-analytic.html to all HTML files
