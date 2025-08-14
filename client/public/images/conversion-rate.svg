@@ -1,9 +1,9 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <rect width="64" height="64" fill="#001765"/>
   <!-- Funnel -->
-  <path d="M 12 12 L 52 12 L 40 32 L 24 32 Z" fill="#001765" opacity="0.3"/>
-  <path d="M 24 32 L 40 32 L 36 42 L 28 42 Z" fill="#001765" opacity="0.6"/>
-  <path d="M 28 42 L 36 42 L 34 52 L 30 52 Z" fill="#001765"/>
+  <path d="M 12 12 L 52 12 L 40 32 L 24 32 Z" fill="white" opacity="0.3"/>
+  <path d="M 24 32 L 40 32 L 36 42 L 28 42 Z" fill="white" opacity="0.6"/>
+  <path d="M 28 42 L 36 42 L 34 52 L 30 52 Z" fill="white"/>
   
   <!-- People entering funnel -->
   <g opacity="0.8">
@@ -15,9 +15,9 @@
   </g>
   
   <!-- Conversion stages -->
-  <text x="32" y="22" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">100%</text>
-  <text x="32" y="36" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">60%</text>
-  <text x="32" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">25%</text>
+  <text x="32" y="22" text-anchor="middle" font-family="Arial" font-size="8" fill="#001765" font-weight="bold">100%</text>
+  <text x="32" y="36" text-anchor="middle" font-family="Arial" font-size="8" fill="#001765" font-weight="bold">60%</text>
+  <text x="32" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#001765" font-weight="bold">25%</text>
   
   <!-- Purchase symbol -->
   <g transform="translate(26, 54)">
@@ -28,12 +28,12 @@
   </g>
   
   <!-- Improvement arrow -->
-  <path d="M 50 28 L 58 20" stroke="#4CAF50" stroke-width="3" marker-end="url(#greenarrow)"/>
-  <text x="54" y="32" font-family="Arial" font-size="6" fill="#4CAF50">+15%</text>
+  <path d="M 50 28 L 58 20" stroke="#00BCD4" stroke-width="3" marker-end="url(#greenarrow)"/>
+  <text x="54" y="32" font-family="Arial" font-size="6" fill="#00BCD4">+15%</text>
   
   <defs>
     <marker id="greenarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00BCD4"/>
     </marker>
   </defs>
 </svg>

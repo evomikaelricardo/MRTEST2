@@ -1,24 +1,24 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <rect width="64" height="64" fill="#001765"/>
   <!-- Camera dome -->
-  <circle cx="32" cy="24" r="12" fill="#001765"/>
-  <circle cx="32" cy="24" r="8" fill="white"/>
-  <circle cx="32" cy="24" r="5" fill="#001765"/>
+  <circle cx="32" cy="24" r="12" fill="white"/>
+  <circle cx="32" cy="24" r="8" fill="#001765"/>
+  <circle cx="32" cy="24" r="5" fill="#00BCD4"/>
   <circle cx="34" cy="22" r="1.5" fill="white"/>
   
   <!-- Camera mount -->
-  <rect x="28" y="36" width="8" height="4" fill="#666"/>
-  <rect x="30" y="40" width="4" height="8" fill="#666"/>
+  <rect x="28" y="36" width="8" height="4" fill="#00BCD4"/>
+  <rect x="30" y="40" width="4" height="8" fill="#00BCD4"/>
   
   <!-- AI scanning lines -->
   <g opacity="0.7">
-    <line x1="8" y1="12" x2="24" y2="18" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
-    <line x1="8" y1="20" x2="24" y2="24" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
-    <line x1="8" y1="28" x2="24" y2="30" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="8" y1="12" x2="24" y2="18" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="8" y1="20" x2="24" y2="24" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="8" y1="28" x2="24" y2="30" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
     
-    <line x1="56" y1="12" x2="40" y2="18" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
-    <line x1="56" y1="20" x2="40" y2="24" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
-    <line x1="56" y1="28" x2="40" y2="30" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="56" y1="12" x2="40" y2="18" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="56" y1="20" x2="40" y2="24" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="56" y1="28" x2="40" y2="30" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
   </g>
   
   <!-- Detection boxes -->
@@ -27,5 +27,5 @@
   
   <!-- Status indicator -->
   <circle cx="48" cy="48" r="3" fill="#00BCD4"/>
-  <text x="54" y="52" font-family="Arial" font-size="6" fill="#001765">ACTIVE</text>
+  <text x="54" y="52" font-family="Arial" font-size="6" fill="white">ACTIVE</text>
 </svg>

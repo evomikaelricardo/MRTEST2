@@ -1,38 +1,38 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="12" fill="#001765" fill-opacity="0.1"/>
+  <rect width="64" height="64" fill="#001765"/>
   <!-- Monitor screen -->
-  <rect x="8" y="12" width="48" height="32" rx="4" fill="#001765"/>
-  <rect x="10" y="14" width="44" height="28" rx="2" fill="white"/>
+  <rect x="8" y="12" width="48" height="32" rx="4" fill="white"/>
+  <rect x="10" y="14" width="44" height="28" rx="2" fill="#001765"/>
   
   <!-- Energy graph -->
   <polyline points="12,36 18,28 24,32 30,24 36,30 42,22 48,26 52,20" 
             stroke="#00BCD4" stroke-width="2" fill="none"/>
   
   <!-- Graph grid -->
-  <line x1="12" y1="18" x2="52" y2="18" stroke="#E0E0E0" stroke-width="0.5"/>
-  <line x1="12" y1="26" x2="52" y2="26" stroke="#E0E0E0" stroke-width="0.5"/>
-  <line x1="12" y1="34" x2="52" y2="34" stroke="#E0E0E0" stroke-width="0.5"/>
-  <line x1="20" y1="18" x2="20" y2="38" stroke="#E0E0E0" stroke-width="0.5"/>
-  <line x1="32" y1="18" x2="32" y2="38" stroke="#E0E0E0" stroke-width="0.5"/>
-  <line x1="44" y1="18" x2="44" y2="38" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="12" y1="18" x2="52" y2="18" stroke="white" stroke-width="0.5"/>
+  <line x1="12" y1="26" x2="52" y2="26" stroke="white" stroke-width="0.5"/>
+  <line x1="12" y1="34" x2="52" y2="34" stroke="white" stroke-width="0.5"/>
+  <line x1="20" y1="18" x2="20" y2="38" stroke="white" stroke-width="0.5"/>
+  <line x1="32" y1="18" x2="32" y2="38" stroke="white" stroke-width="0.5"/>
+  <line x1="44" y1="18" x2="44" y2="38" stroke="white" stroke-width="0.5"/>
   
   <!-- Power value -->
-  <text x="14" y="22" font-family="Arial" font-size="6" fill="#001765">2.5kW</text>
+  <text x="14" y="22" font-family="Arial" font-size="6" fill="white">2.5kW</text>
   
   <!-- Usage indicators -->
   <circle cx="16" cy="36" r="1.5" fill="#00BCD4"/>
-  <circle cx="32" cy="24" r="1.5" fill="#FF6B6B"/>
-  <circle cx="48" cy="26" r="1.5" fill="#4CAF50"/>
+  <circle cx="32" cy="24" r="1.5" fill="white"/>
+  <circle cx="48" cy="26" r="1.5" fill="#00BCD4"/>
   
   <!-- Stand -->
-  <rect x="28" y="44" width="8" height="4" fill="#666"/>
-  <rect x="20" y="48" width="24" height="2" fill="#666"/>
+  <rect x="28" y="44" width="8" height="4" fill="#00BCD4"/>
+  <rect x="20" y="48" width="24" height="2" fill="#00BCD4"/>
   
   <!-- Smart meter -->
-  <rect x="48" y="52" width="12" height="8" rx="2" fill="#001765"/>
+  <rect x="48" y="52" width="12" height="8" rx="2" fill="white"/>
   <rect x="50" y="54" width="8" height="2" fill="#00BCD4"/>
   <circle cx="54" cy="58" r="1" fill="#00BCD4"/>
   
   <!-- Connection line -->
-  <line x1="48" y1="56" x2="44" y2="44" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="48" y1="56" x2="44" y2="44" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
 </svg>
