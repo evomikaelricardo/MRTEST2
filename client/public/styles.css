@@ -1420,6 +1420,134 @@ footer {
     }
 }
 
+/* Competitive Advantage Section */
+.competitive-advantage-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.competitive-advantage-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.competitive-advantage-text h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #001765;
+    margin-bottom: 1.5rem;
+}
+
+.competitive-advantage-text p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.competitive-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.advantage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fbff 0%, #eef7ff 100%);
+    border-radius: 12px;
+    border-left: 4px solid #2196F3;
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 23, 101, 0.1);
+}
+
+.advantage-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.advantage-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #001765;
+    margin-bottom: 0.5rem;
+}
+
+.advantage-content p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.competitive-advantage-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.competitive-advantage-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Mobile responsiveness for competitive advantage */
+@media (max-width: 768px) {
+    .competitive-advantage-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .competitive-advantage-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .competitive-advantage-text p {
+        font-size: 1rem;
+    }
+    
+    .advantage-item {
+        text-align: left;
+    }
+    
+    .competitive-advantage-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .competitive-advantage-section {
+        padding: 60px 0;
+    }
+    
+    .competitive-advantage-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .advantage-item {
+        padding: 1rem;
+    }
+    
+    .advantage-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .advantage-content p {
+        font-size: 0.9rem;
+    }
+}
+
 .benefit-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
