@@ -13,6 +13,7 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 - Updated content to highlight maximum compatibility, flexibility, and freedom to choose best tools for business
 - Added four key features: Brand-Agnostic Integration, Maximum Flexibility, Seamless Performance, Easy Upgrades
 - Removed "Transform Your Retail Business" section from smart-retail.html for cleaner page layout
+- Added "Inventory Management" technology card to smart-retail.html linked to rfid-inventory.html
 - Migration checklist fully completed with all steps marked as done
 
 **August 14, 2025 - Hero Section Gradient Update**
