@@ -1465,6 +1465,19 @@ footer {
     margin-top: 4rem;
 }
 
+.technologies-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .technologies-grid-2col {
+        grid-template-columns: 1fr;
+    }
+}
+
 .tech-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
