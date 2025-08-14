@@ -1,6 +1,4 @@
 (function() {
-    // Contact form functionality - no paid email service required
-
     // Contact Form Handler
     const contactForm = document.getElementById('contactForm');
     const formStatus = document.getElementById('formStatus');
@@ -12,7 +10,7 @@
             // Get form data
             const formData = {
                 email: document.getElementById('email').value,
-                company: document.getElementById('company').value || 'Not provided',
+                company: document.getElementById('company').value,
                 subject: document.getElementById('subject').value,
                 message: document.getElementById('message').value
             };
@@ -23,8 +21,7 @@
             formStatus.textContent = 'Sending message...';
             
             try {
-                // Store the message in our backend first
-                const storeResponse = await fetch('/api/contact', {
+                const response = await fetch('/api/contact', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -32,18 +29,12 @@
                     body: JSON.stringify(formData)
                 });
                 
-                const result = await storeResponse.json();
+                const result = await response.json();
                 
-                if (storeResponse.ok && result.success) {
+                if (response.ok) {
                     formStatus.className = 'form-status success';
                     formStatus.textContent = 'Message sent successfully! We will get back to you soon.';
                     contactForm.reset();
-                    
-                    // Log success for admin monitoring
-                    console.log('Contact message stored successfully:', {
-                        id: result.id,
-                        timestamp: new Date().toISOString()
-                    });
                 } else {
                     throw new Error(result.message || 'Failed to send message');
                 }
