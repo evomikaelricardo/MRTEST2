@@ -1180,6 +1180,11 @@ footer {
     min-height: 500px;
 }
 
+/* Index page specific hero with gradient to pure white */
+.hero-modern.index-hero-gradient {
+    background: linear-gradient(135deg, #E8F4FD 0%, #ffffff 100%);
+}
+
 
 
 .hero-content-modern {
