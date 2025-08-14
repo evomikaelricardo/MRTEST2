@@ -1090,7 +1090,7 @@ footer {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
     margin-top: 4rem;
@@ -1099,7 +1099,7 @@ footer {
 @media (max-width: 1024px) {
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
     }
 }
 
@@ -1150,25 +1150,25 @@ footer {
 
 /* Enhanced feature images for analytics section */
 .feature-image {
-    width: 100px;
-    height: 70px;
-    margin-bottom: 1.2rem;
+    width: 120px;
+    height: 80px;
+    margin-bottom: 1.5rem;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 23, 101, 0.1);
 }
 
 .features-enhanced .feature-card {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .features-enhanced .feature-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.8rem;
 }
 
 .features-enhanced .feature-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1.2rem;
 }
