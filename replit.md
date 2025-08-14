@@ -6,6 +6,15 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 14, 2025 - Computer Vision SVG Icon Redesign**
+- Redesigned footfall-counter.svg to represent computer vision technology
+- Added camera/vision sensor at top with lens and detection rays
+- Implemented AI detection boxes around person figures with "PERSON" labels
+- Added neural network pattern at bottom showing AI processing
+- Included digital count display showing "COUNT: 2"
+- Maintained website color consistency: #001765 (dark blue), #00BCD4 (cyan), white
+- Enhanced 64x64px format with professional computer vision aesthetic
+
 **August 14, 2025 - Footer Social Media Icons Standardization**
 - Added consistent social media icons to all website pages in footer-bottom section
 - Implemented Instagram, YouTube, and Twitter links across all 10 HTML pages  

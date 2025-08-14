@@ -1,24 +1,70 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" fill="#001765"/>
-  <!-- People walking -->
-  <g transform="translate(8, 16)">
-    <!-- Person 1 -->
-    <circle cx="12" cy="8" r="4" fill="white"/>
-    <rect x="8" y="12" width="8" height="12" rx="4" fill="white"/>
-    <rect x="6" y="20" width="4" height="8" rx="2" fill="white"/>
-    <rect x="14" y="20" width="4" height="8" rx="2" fill="white"/>
+  
+  <!-- Computer Vision Camera/Eye -->
+  <g transform="translate(32, 8)">
+    <!-- Camera body -->
+    <rect x="-8" y="0" width="16" height="10" rx="2" fill="white"/>
+    <!-- Lens -->
+    <circle cx="0" cy="5" r="4" fill="#001765"/>
+    <circle cx="0" cy="5" r="2" fill="#00BCD4"/>
+    <!-- Vision rays -->
+    <path d="M-6 10 L-10 20 M0 10 L0 20 M6 10 L10 20" stroke="#00BCD4" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Person 1 with detection box -->
+  <g transform="translate(16, 24)">
+    <!-- Detection box -->
+    <rect x="-6" y="-2" width="12" height="20" fill="none" stroke="#00BCD4" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Person -->
+    <circle cx="0" cy="2" r="3" fill="white"/>
+    <rect x="-3" y="5" width="6" height="8" rx="3" fill="white"/>
+    <rect x="-4" y="11" width="2.5" height="5" rx="1" fill="white"/>
+    <rect x="1.5" y="11" width="2.5" height="5" rx="1" fill="white"/>
+    <!-- Detection label -->
+    <rect x="-5" y="-4" width="6" height="2" fill="#00BCD4"/>
+    <text x="-4" y="-2.5" font-family="Arial" font-size="2" fill="white" font-weight="bold">PERSON</text>
+  </g>
+  
+  <!-- Person 2 with detection box -->
+  <g transform="translate(48, 24)">
+    <!-- Detection box -->
+    <rect x="-6" y="-2" width="12" height="20" fill="none" stroke="#00BCD4" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Person -->
+    <circle cx="0" cy="2" r="3" fill="white"/>
+    <rect x="-3" y="5" width="6" height="8" rx="3" fill="white"/>
+    <rect x="-4" y="11" width="2.5" height="5" rx="1" fill="white"/>
+    <rect x="1.5" y="11" width="2.5" height="5" rx="1" fill="white"/>
+    <!-- Detection label -->
+    <rect x="-5" y="-4" width="6" height="2" fill="#00BCD4"/>
+    <text x="-4" y="-2.5" font-family="Arial" font-size="2" fill="white" font-weight="bold">PERSON</text>
+  </g>
+  
+  <!-- Neural Network Pattern -->
+  <g transform="translate(32, 48)">
+    <!-- Network nodes -->
+    <circle cx="-12" cy="0" r="1.5" fill="#00BCD4"/>
+    <circle cx="-6" cy="-3" r="1.5" fill="#00BCD4"/>
+    <circle cx="-6" cy="3" r="1.5" fill="#00BCD4"/>
+    <circle cx="0" cy="0" r="1.5" fill="white"/>
+    <circle cx="6" cy="-3" r="1.5" fill="#00BCD4"/>
+    <circle cx="6" cy="3" r="1.5" fill="#00BCD4"/>
+    <circle cx="12" cy="0" r="1.5" fill="#00BCD4"/>
     
-    <!-- Person 2 -->
-    <circle cx="36" cy="8" r="4" fill="#00BCD4"/>
-    <rect x="32" y="12" width="8" height="12" rx="4" fill="#00BCD4"/>
-    <rect x="30" y="20" width="4" height="8" rx="2" fill="#00BCD4"/>
-    <rect x="38" y="20" width="4" height="8" rx="2" fill="#00BCD4"/>
-    
-    <!-- Counter lines -->
-    <line x1="24" y1="0" x2="24" y2="32" stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
-    
-    <!-- Numbers -->
-    <text x="2" y="38" font-family="Arial" font-size="8" fill="white" font-weight="bold">1</text>
-    <text x="42" y="38" font-family="Arial" font-size="8" fill="#00BCD4" font-weight="bold">2</text>
+    <!-- Network connections -->
+    <line x1="-12" y1="0" x2="-6" y2="-3" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <line x1="-12" y1="0" x2="-6" y2="3" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <line x1="-6" y1="-3" x2="0" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <line x1="-6" y1="3" x2="0" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="6" y2="-3" stroke="white" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="6" y2="3" stroke="white" stroke-width="0.8" opacity="0.6"/>
+    <line x1="6" y1="-3" x2="12" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <line x1="6" y1="3" x2="12" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  
+  <!-- Count Display -->
+  <g transform="translate(32, 58)">
+    <rect x="-8" y="-2" width="16" height="4" rx="1" fill="#00BCD4"/>
+    <text x="0" y="1" font-family="Arial" font-size="3" fill="white" font-weight="bold" text-anchor="middle">COUNT: 2</text>
   </g>
 </svg>
