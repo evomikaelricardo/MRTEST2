@@ -1180,6 +1180,11 @@ footer {
     min-height: 500px;
 }
 
+/* Smart Retail specific hero with reversed gradient */
+.hero-modern.smart-retail-hero-gradient {
+    background: linear-gradient(135deg, #E8F4FD 0%, #F8F9FA 100%);
+}
+
 .hero-content-modern {
     display: grid;
     grid-template-columns: 1fr 1fr;
