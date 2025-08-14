@@ -1,70 +1,86 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" fill="#001765"/>
   
-  <!-- Computer Vision Camera/Eye -->
-  <g transform="translate(32, 8)">
-    <!-- Camera body -->
-    <rect x="-8" y="0" width="16" height="10" rx="2" fill="white"/>
-    <!-- Lens -->
-    <circle cx="0" cy="5" r="4" fill="#001765"/>
-    <circle cx="0" cy="5" r="2" fill="#00BCD4"/>
-    <!-- Vision rays -->
-    <path d="M-6 10 L-10 20 M0 10 L0 20 M6 10 L10 20" stroke="#00BCD4" stroke-width="1.5" opacity="0.7"/>
+  <!-- AI Vision Camera -->
+  <g transform="translate(32, 10)">
+    <!-- Camera mount -->
+    <rect x="-6" y="-2" width="12" height="4" rx="1" fill="white"/>
+    <!-- Camera lens outer -->
+    <circle cx="0" cy="4" r="6" fill="white"/>
+    <!-- Camera lens inner -->
+    <circle cx="0" cy="4" r="4.5" fill="#001765"/>
+    <!-- Camera lens center -->
+    <circle cx="0" cy="4" r="2.5" fill="#00BCD4"/>
+    <!-- Lens reflection -->
+    <circle cx="-1" cy="2.5" r="1" fill="white" opacity="0.8"/>
+    <!-- AI indicator -->
+    <rect x="-3" y="-4" width="6" height="2" rx="1" fill="#00BCD4"/>
+    <text x="0" y="-2.5" font-family="Arial" font-size="1.5" fill="white" font-weight="bold" text-anchor="middle">AI</text>
   </g>
   
-  <!-- Person 1 with detection box -->
-  <g transform="translate(16, 24)">
-    <!-- Detection box -->
-    <rect x="-6" y="-2" width="12" height="20" fill="none" stroke="#00BCD4" stroke-width="1.5" stroke-dasharray="3,2"/>
-    <!-- Person -->
-    <circle cx="0" cy="2" r="3" fill="white"/>
-    <rect x="-3" y="5" width="6" height="8" rx="3" fill="white"/>
-    <rect x="-4" y="11" width="2.5" height="5" rx="1" fill="white"/>
-    <rect x="1.5" y="11" width="2.5" height="5" rx="1" fill="white"/>
-    <!-- Detection label -->
-    <rect x="-5" y="-4" width="6" height="2" fill="#00BCD4"/>
-    <text x="-4" y="-2.5" font-family="Arial" font-size="2" fill="white" font-weight="bold">PERSON</text>
+  <!-- Scanning beam field -->
+  <g opacity="0.6">
+    <path d="M26 16 L12 28 L12 44 L52 44 L52 28 L38 16 Z" fill="none" stroke="#00BCD4" stroke-width="1" stroke-dasharray="2,1"/>
+    <!-- Scanning lines -->
+    <line x1="16" y1="30" x2="48" y2="30" stroke="#00BCD4" stroke-width="0.5" opacity="0.5"/>
+    <line x1="16" y1="34" x2="48" y2="34" stroke="#00BCD4" stroke-width="0.5" opacity="0.5"/>
+    <line x1="16" y1="38" x2="48" y2="38" stroke="#00BCD4" stroke-width="0.5" opacity="0.5"/>
   </g>
   
-  <!-- Person 2 with detection box -->
-  <g transform="translate(48, 24)">
-    <!-- Detection box -->
-    <rect x="-6" y="-2" width="12" height="20" fill="none" stroke="#00BCD4" stroke-width="1.5" stroke-dasharray="3,2"/>
-    <!-- Person -->
-    <circle cx="0" cy="2" r="3" fill="white"/>
-    <rect x="-3" y="5" width="6" height="8" rx="3" fill="white"/>
-    <rect x="-4" y="11" width="2.5" height="5" rx="1" fill="white"/>
-    <rect x="1.5" y="11" width="2.5" height="5" rx="1" fill="white"/>
-    <!-- Detection label -->
-    <rect x="-5" y="-4" width="6" height="2" fill="#00BCD4"/>
-    <text x="-4" y="-2.5" font-family="Arial" font-size="2" fill="white" font-weight="bold">PERSON</text>
-  </g>
-  
-  <!-- Neural Network Pattern -->
-  <g transform="translate(32, 48)">
-    <!-- Network nodes -->
-    <circle cx="-12" cy="0" r="1.5" fill="#00BCD4"/>
-    <circle cx="-6" cy="-3" r="1.5" fill="#00BCD4"/>
-    <circle cx="-6" cy="3" r="1.5" fill="#00BCD4"/>
-    <circle cx="0" cy="0" r="1.5" fill="white"/>
-    <circle cx="6" cy="-3" r="1.5" fill="#00BCD4"/>
-    <circle cx="6" cy="3" r="1.5" fill="#00BCD4"/>
-    <circle cx="12" cy="0" r="1.5" fill="#00BCD4"/>
+  <!-- Person 1 with AI detection -->
+  <g transform="translate(20, 28)">
+    <!-- Person figure -->
+    <circle cx="0" cy="4" r="2.5" fill="white"/>
+    <rect x="-2" y="6.5" width="4" height="6" rx="2" fill="white"/>
+    <rect x="-2.5" y="11" width="1.5" height="4" rx="0.5" fill="white"/>
+    <rect x="1" y="11" width="1.5" height="4" rx="0.5" fill="white"/>
     
-    <!-- Network connections -->
-    <line x1="-12" y1="0" x2="-6" y2="-3" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
-    <line x1="-12" y1="0" x2="-6" y2="3" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
-    <line x1="-6" y1="-3" x2="0" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
-    <line x1="-6" y1="3" x2="0" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
-    <line x1="0" y1="0" x2="6" y2="-3" stroke="white" stroke-width="0.8" opacity="0.6"/>
-    <line x1="0" y1="0" x2="6" y2="3" stroke="white" stroke-width="0.8" opacity="0.6"/>
-    <line x1="6" y1="-3" x2="12" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
-    <line x1="6" y1="3" x2="12" y2="0" stroke="#00BCD4" stroke-width="0.8" opacity="0.6"/>
+    <!-- Detection bounding box -->
+    <rect x="-4" y="0" width="8" height="16" fill="none" stroke="#00BCD4" stroke-width="1.2"/>
+    <!-- Corner markers -->
+    <path d="M-4 0 L-2 0 M-4 0 L-4 2 M4 0 L2 0 M4 0 L4 2 M-4 16 L-2 16 M-4 16 L-4 14 M4 16 L2 16 M4 16 L4 14" stroke="#00BCD4" stroke-width="2"/>
+    
+    <!-- Confidence score -->
+    <rect x="-3" y="-3" width="6" height="2" fill="#00BCD4"/>
+    <text x="0" y="-1.5" font-family="Arial" font-size="1.2" fill="white" font-weight="bold" text-anchor="middle">98%</text>
   </g>
   
-  <!-- Count Display -->
-  <g transform="translate(32, 58)">
-    <rect x="-8" y="-2" width="16" height="4" rx="1" fill="#00BCD4"/>
-    <text x="0" y="1" font-family="Arial" font-size="3" fill="white" font-weight="bold" text-anchor="middle">COUNT: 2</text>
+  <!-- Person 2 with AI detection -->
+  <g transform="translate(44, 28)">
+    <!-- Person figure -->
+    <circle cx="0" cy="4" r="2.5" fill="white"/>
+    <rect x="-2" y="6.5" width="4" height="6" rx="2" fill="white"/>
+    <rect x="-2.5" y="11" width="1.5" height="4" rx="0.5" fill="white"/>
+    <rect x="1" y="11" width="1.5" height="4" rx="0.5" fill="white"/>
+    
+    <!-- Detection bounding box -->
+    <rect x="-4" y="0" width="8" height="16" fill="none" stroke="#00BCD4" stroke-width="1.2"/>
+    <!-- Corner markers -->
+    <path d="M-4 0 L-2 0 M-4 0 L-4 2 M4 0 L2 0 M4 0 L4 2 M-4 16 L-2 16 M-4 16 L-4 14 M4 16 L2 16 M4 16 L4 14" stroke="#00BCD4" stroke-width="2"/>
+    
+    <!-- Confidence score -->
+    <rect x="-3" y="-3" width="6" height="2" fill="#00BCD4"/>
+    <text x="0" y="-1.5" font-family="Arial" font-size="1.2" fill="white" font-weight="bold" text-anchor="middle">95%</text>
+  </g>
+  
+  <!-- Data processing visualization -->
+  <g transform="translate(32, 52)">
+    <!-- Processing bars -->
+    <rect x="-12" y="0" width="2" height="4" fill="#00BCD4"/>
+    <rect x="-8" y="-1" width="2" height="6" fill="#00BCD4"/>
+    <rect x="-4" y="1" width="2" height="3" fill="#00BCD4"/>
+    <rect x="0" y="-0.5" width="2" height="5" fill="white"/>
+    <rect x="4" y="0.5" width="2" height="3.5" fill="#00BCD4"/>
+    <rect x="8" y="-1" width="2" height="6" fill="#00BCD4"/>
+    <rect x="12" y="1" width="2" height="3" fill="#00BCD4"/>
+    
+    <!-- CV label -->
+    <text x="0" y="8" font-family="Arial" font-size="2.5" fill="white" font-weight="bold" text-anchor="middle">COMPUTER VISION</text>
+  </g>
+  
+  <!-- Live count display -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="12" height="6" rx="1" fill="#00BCD4"/>
+    <text x="6" y="3.5" font-family="Arial" font-size="2" fill="white" font-weight="bold" text-anchor="middle">LIVE: 2</text>
   </g>
 </svg>
