@@ -1176,14 +1176,11 @@ footer {
 /* Modern Hero Section */
 .hero-modern {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #F8F9FA 0%, #E8F4FD 100%);
+    background: linear-gradient(135deg, #E8F4FD 0%, #F8F9FA 100%);
     min-height: 500px;
 }
 
-/* Smart Retail specific hero with reversed gradient */
-.hero-modern.smart-retail-hero-gradient {
-    background: linear-gradient(135deg, #E8F4FD 0%, #F8F9FA 100%);
-}
+
 
 .hero-content-modern {
     display: grid;

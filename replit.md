@@ -6,6 +6,13 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 14, 2025 - Hero Section Gradient Update**
+- Updated hero section background gradient across all HTML pages from white-to-light-blue to light-blue-to-white
+- Applied consistent visual flow direction with gradient starting from light blue (#E8F4FD) and ending in light gray (#F8F9FA)
+- Changed base `.hero-modern` class gradient to ensure uniformity across all pages
+- Removed smart-retail specific gradient override to maintain consistency
+- Updated pages: index.html, smart-retail.html, smart-warehouse.html, smart-home.html, custom-solutions.html, about.html, electronic-shelf-label.html, interactive-marketing-screen.html, rfid-inventory.html
+
 **August 13, 2025 - Smart Warehouse Section Redesign**
 - Redesigned "Advanced Warehouse Automation" section to focus on four core solutions
 - Updated structure to include: RFID Inventory Management, Automated CCTV Analysis, Warehouse-wide Automation Systems, and Robotic Integration
