@@ -6,6 +6,14 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 14, 2025 - Footer Social Media Icons Standardization**
+- Added consistent social media icons to all website pages in footer-bottom section
+- Implemented Instagram, YouTube, and Twitter links across all 10 HTML pages  
+- Updated footer structure with centered layout: copyright text above, social media icons below
+- Applied consistent styling with hover effects and proper accessibility labels
+- Updated CSS to support new footer-social-bottom layout with responsive design
+- All pages now have uniform footer experience with same social media presence
+
 **August 14, 2025 - Smart Warehouse Content Updates**
 - Removed "Robotic Integration for Inventory Retrieval" section from smart-warehouse.html
 - Updated hero description to remove "robotic warehousing" references for consistency
