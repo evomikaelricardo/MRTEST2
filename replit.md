@@ -6,6 +6,11 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 14, 2025 - Retail Traffic Analytics Image Update**
+- Updated hero section image in retail-traffic-analytic.html from /images/retail-footfall-traffic.png to /generic charts_1755139596765.png
+- Applied uploaded "generic charts.png" image as requested by user for better visual representation
+- Image change completed successfully with automatic page reload through Vite
+
 **August 14, 2025 - Hero Section Gradient Update**
 - Updated hero section background gradient across all HTML pages from white-to-light-blue to light-blue-to-white
 - Applied consistent visual flow direction with gradient starting from light blue (#E8F4FD) and ending in light gray (#F8F9FA)
