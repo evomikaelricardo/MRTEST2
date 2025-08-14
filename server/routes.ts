@@ -3,7 +3,6 @@ import express from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
-import nodemailer from "nodemailer";
 import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -19,8 +18,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Store the message
       const message = await storage.createContactMessage(validatedData);
       
-      // Send email to hello@evo.id
-      await sendContactEmail(validatedData);
+      console.log("New contact message received:", {
+        id: message.id,
+        email: validatedData.email,
+        company: validatedData.company || 'Not provided',
+        subject: validatedData.subject,
+        timestamp: message.createdAt
+      });
       
       res.json({ 
         success: true, 
@@ -57,57 +61,4 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   const httpServer = createServer(app);
   return httpServer;
-}
-
-async function sendContactEmail(contactData: any) {
-  try {
-    // Create transporter using environment variables
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: parseInt(process.env.SMTP_PORT || "587"),
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: process.env.SMTP_USER || process.env.EMAIL_USER,
-        pass: process.env.SMTP_PASS || process.env.EMAIL_PASS,
-      },
-    });
-
-    // Email content
-    const mailOptions = {
-      from: process.env.SMTP_USER || process.env.EMAIL_USER,
-      to: "hello@evo.id",
-      subject: `New Contact Form Submission: ${contactData.subject}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>From:</strong> ${contactData.email}</p>
-        ${contactData.company ? `<p><strong>Company:</strong> ${contactData.company}</p>` : ''}
-        <p><strong>Subject:</strong> ${contactData.subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${contactData.message.replace(/\n/g, '<br>')}</p>
-        <hr>
-        <p><em>This message was sent from the EVO website contact form.</em></p>
-      `,
-      text: `
-        New Contact Form Submission
-        
-        From: ${contactData.email}
-        ${contactData.company ? `Company: ${contactData.company}` : ''}
-        Subject: ${contactData.subject}
-        
-        Message:
-        ${contactData.message}
-        
-        ---
-        This message was sent from the EVO website contact form.
-      `
-    };
-
-    // Send email
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Email sent successfully:", info.messageId);
-    return info;
-  } catch (error) {
-    console.error("Error sending email:", error);
-    throw error;
-  }
 }
