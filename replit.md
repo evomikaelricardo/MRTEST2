@@ -6,6 +6,18 @@ EVO is a comprehensive enterprise IoT and AI solutions platform designed to serv
 
 ## Recent Changes
 
+**August 14, 2025 - Smart Warehouse Content Updates**
+- Removed "Robotic Integration for Inventory Retrieval" section from smart-warehouse.html
+- Updated hero description to remove "robotic warehousing" references for consistency
+- Updated meta descriptions to replace "robotic" with "comprehensive automation"
+- Smart warehouse now focuses on 3 core solutions: RFID, Automated CCTV, Warehouse Automation
+- Maintained content consistency across all page sections and meta tags
+
+**August 14, 2025 - CTA Button Standardization**
+- Changed "Get Started Today" to "Request Demo" in about.html, smart-retail.html
+- Changed "Schedule ESL Consultation" to "Request Demo" in electronic-shelf-label.html
+- Standardized key CTA buttons for consistent user experience across platform
+
 **August 14, 2025 - RFID Inventory Page Content Optimization**
 - Completely rewrote rfid-inventory.html benefits section with 9 specific RFID benefits
 - Added comprehensive analytics reporting features: DOH, FEFO, NTE, COGS reports
