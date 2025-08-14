@@ -1325,8 +1325,8 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(0, 23, 101, 0.2);
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1335,7 +1335,7 @@ footer {
 .hero-image-modern {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 350px;
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
@@ -1393,13 +1393,13 @@ footer {
     }
     
     .hero-image-container {
-        width: 350px;
-        height: 350px;
+        width: 245px;
+        height: 245px;
         margin: 0 auto;
     }
     
     .hero-image-modern {
-        max-width: 350px;
+        max-width: 245px;
     }
     
     .stats-badge {
@@ -1411,12 +1411,12 @@ footer {
 
 @media (max-width: 480px) {
     .hero-image-container {
-        width: 280px;
-        height: 280px;
+        width: 196px;
+        height: 196px;
     }
     
     .hero-image-modern {
-        max-width: 280px;
+        max-width: 196px;
     }
 }
 
