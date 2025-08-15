@@ -1616,10 +1616,14 @@ footer {
 }
 
 .tech-image {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 48px;
     margin: 0 auto 1.5rem;
     border-radius: 8px;
+    object-fit: contain;
+    background: #F8F9FA;
+    padding: 8px;
+    border: 2px solid #E2E8F0;
 }
 
 .tech-card h3 {
