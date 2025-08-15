@@ -1,0 +1,30 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765"/>
+  <g transform="translate(12, 12)">
+    <!-- Checkout counter -->
+    <rect x="28" y="16" width="12" height="8" rx="2" fill="#00BCD4"/>
+    <!-- Cashier -->
+    <circle cx="34" cy="12" r="2" fill="white"/>
+    <rect x="32" y="14" width="4" height="6" rx="1" fill="white"/>
+    <!-- Queue people -->
+    <g transform="translate(0, 20)">
+      <!-- Person 1 -->
+      <circle cx="4" cy="2" r="1.5" fill="#00BCD4"/>
+      <rect x="3" y="4" width="2" height="4" rx="0.5" fill="#00BCD4"/>
+      <!-- Person 2 -->
+      <circle cx="10" cy="2" r="1.5" fill="#00BCD4" opacity="0.8"/>
+      <rect x="9" y="4" width="2" height="4" rx="0.5" fill="#00BCD4" opacity="0.8"/>
+      <!-- Person 3 -->
+      <circle cx="16" cy="2" r="1.5" fill="#00BCD4" opacity="0.6"/>
+      <rect x="15" y="4" width="2" height="4" rx="0.5" fill="#00BCD4" opacity="0.6"/>
+      <!-- Person 4 -->
+      <circle cx="22" cy="2" r="1.5" fill="#00BCD4" opacity="0.4"/>
+      <rect x="21" y="4" width="2" height="4" rx="0.5" fill="#00BCD4" opacity="0.4"/>
+    </g>
+    <!-- Queue line -->
+    <path d="M6 24 L30 24" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <!-- Timer/Management indicator -->
+    <circle cx="34" cy="4" r="3" stroke="white" stroke-width="1.5" fill="none"/>
+    <path d="M34 2 L34 4 L35.5 5.5" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  </g>
+</svg>
