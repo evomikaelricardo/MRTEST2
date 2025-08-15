@@ -1518,7 +1518,7 @@ footer {
 .hero-dashboard-container {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 1020px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
