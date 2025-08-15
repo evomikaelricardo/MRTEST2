@@ -729,6 +729,175 @@ nav > ul > li:hover > a {
     margin: 0;
 }
 
+/* Modern Solutions Cards Layout */
+.solutions-modern {
+    padding: 100px 0;
+    background: #F8F9FA;
+}
+
+.solutions-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.solution-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 23, 101, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #E2E8F0;
+    height: fit-content;
+}
+
+.solution-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 23, 101, 0.12);
+    border-color: #00BCD4;
+}
+
+.solution-card-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.solution-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.solution-icon.retail-icon {
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
+    color: white;
+}
+
+.solution-icon.warehouse-icon {
+    background: linear-gradient(135deg, #00BCD4 0%, #00E5FF 100%);
+    color: white;
+}
+
+.solution-icon.home-icon {
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
+    color: white;
+}
+
+.solution-icon.custom-icon {
+    background: linear-gradient(135deg, #00BCD4 0%, #00E5FF 100%);
+    color: white;
+}
+
+.solution-card-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.solution-card-header h3 a {
+    color: #001765;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.solution-card-header h3 a:hover {
+    color: #00BCD4;
+}
+
+.solution-card-header p {
+    color: #64748B;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.solution-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.solution-card .feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border-left: none;
+    transition: none;
+}
+
+.solution-card .feature-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solution-card .feature-content {
+    flex: 1;
+}
+
+.solution-card .feature-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.solution-card .feature-content p {
+    font-size: 0.9rem;
+    color: #64748B;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Mobile responsiveness for modern cards */
+@media (max-width: 768px) {
+    .solutions-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .solution-card {
+        padding: 1.5rem;
+    }
+    
+    .solution-card-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .feature-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .solution-card .feature-content h4 {
+        font-size: 0.95rem;
+    }
+    
+    .solution-card .feature-content p {
+        font-size: 0.85rem;
+    }
+}
+
 /* About Section */
 .about {
     padding: 100px 0;
