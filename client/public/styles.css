@@ -781,7 +781,7 @@ nav > ul > li:hover > a {
 }
 
 .solution-icon.warehouse-icon {
-    background: linear-gradient(135deg, #00BCD4 0%, #00E5FF 100%);
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
     color: white;
 }
 
@@ -791,7 +791,7 @@ nav > ul > li:hover > a {
 }
 
 .solution-icon.custom-icon {
-    background: linear-gradient(135deg, #00BCD4 0%, #00E5FF 100%);
+    background: linear-gradient(135deg, #001765 0%, #003CB3 100%);
     color: white;
 }
 
