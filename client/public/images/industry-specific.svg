@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765"/>
+  <g transform="translate(12, 12)">
+    <!-- Factory/Industry icon -->
+    <rect x="4" y="20" width="32" height="16" rx="2" fill="#00BCD4"/>
+    <rect x="8" y="16" width="6" height="4" rx="1" fill="#00BCD4"/>
+    <rect x="20" y="14" width="6" height="6" rx="1" fill="#00BCD4"/>
+    <rect x="30" y="18" width="4" height="2" rx="1" fill="#00BCD4"/>
+    <!-- Smoke stacks -->
+    <rect x="6" y="8" width="3" height="8" rx="1.5" fill="#00BCD4"/>
+    <rect x="15" y="6" width="3" height="10" rx="1.5" fill="#00BCD4"/>
+    <rect x="24" y="10" width="3" height="6" rx="1.5" fill="#00BCD4"/>
+    <!-- Smoke clouds -->
+    <circle cx="7.5" cy="6" r="2" fill="white" opacity="0.7"/>
+    <circle cx="16.5" cy="4" r="2.5" fill="white" opacity="0.7"/>
+    <circle cx="25.5" cy="8" r="1.5" fill="white" opacity="0.7"/>
+  </g>
+</svg>

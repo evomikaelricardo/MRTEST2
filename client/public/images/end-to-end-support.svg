@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#001765"/>
+  <g transform="translate(12, 12)">
+    <!-- Lifecycle circle -->
+    <circle cx="20" cy="20" r="16" stroke="#00BCD4" stroke-width="3" fill="none"/>
+    <!-- Process steps -->
+    <circle cx="20" cy="8" r="3" fill="#00BCD4"/> <!-- Start/Planning -->
+    <circle cx="32" cy="20" r="3" fill="#00BCD4"/> <!-- Development -->
+    <circle cx="20" cy="32" r="3" fill="#00BCD4"/> <!-- Implementation -->
+    <circle cx="8" cy="20" r="3" fill="#00BCD4"/> <!-- Support -->
+    <!-- Center support icon -->
+    <circle cx="20" cy="20" r="5" fill="white"/>
+    <path d="M18 18 L22 22 M18 22 L22 18" stroke="#001765" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arrows showing flow -->
+    <path d="M26 12 L28 10" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M28 26 L26 28" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M14 28 L12 26" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M12 14 L14 12" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
