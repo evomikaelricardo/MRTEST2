@@ -3,6 +3,13 @@
 ## Overview
 EVO is a comprehensive enterprise IoT and AI solutions platform designed for smart retail, smart home, smart warehouse, and custom solutions across Southeast Asia. The platform aims to provide integrated, personalized, and affordable enterprise technology solutions, showcasing the company's capabilities in the region.
 
+## Recent Changes
+- **August 15, 2025**: Successfully migrated project from Replit Agent to standard Replit environment
+  - Verified all dependencies and packages are properly installed
+  - Confirmed workflow runs correctly with Express server on port 5000
+  - Maintained existing architecture and security practices
+  - Project is now fully operational in Replit environment
+
 ## User Preferences
 Preferred communication style: Simple, everyday language.
 
