@@ -1503,55 +1503,6 @@ footer {
     }
 }
 
-/* Dashboard Hero Specific Styles */
-.hero-content-modern:has(.hero-visual-dashboard) {
-    grid-template-columns: 3fr 2fr;
-    gap: 2rem;
-}
-
-.hero-visual-dashboard {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.hero-dashboard-container {
-    position: relative;
-    width: 100%;
-    max-width: 1020px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 23, 101, 0.15);
-    background: transparent;
-}
-
-.hero-dashboard-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    background: transparent;
-    border-radius: 15px;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
-}
-
-/* Mobile responsiveness for dashboard hero */
-@media (max-width: 768px) {
-    .hero-content-modern:has(.hero-visual-dashboard) {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .hero-visual-dashboard {
-        justify-content: center;
-        order: -1;
-    }
-    
-    .hero-dashboard-container {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-}
-
 .benefit-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
